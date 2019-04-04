@@ -69,11 +69,31 @@
                     Оборудование для эксплуатации и ремонта скважин
                 </li>
             </ul>
-            <form action="#" class="search"></form>
+            <form action="#" class="search d-flex">
+                <input type="text" class="search__input" placeholder="Поиск">
+                <button class="search__btn" type="button"></button>
+            </form>
         </div>
     </div>
     <section class="catalog">
         <div class="catalog__container container">
+            <ul class="catalog__tags tags d-flex">
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Запасные Части</a>
+                </li>
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Сервис</a>
+                </li>
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Опросный лист</a>
+                </li>
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Документы</a>
+                </li>
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Запрос</a>
+                </li>
+            </ul>
             <h1 class="catalog__title title title_h2">Оборудование для эксплуатаци<br> и ремонта скважин</h1>
             <div class="catalog__description">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consectetur, hic laboriosam nemo voluptatibus ab iusto eaque, saepe itaque ipsam sapiente perspiciatis. Repellendus ducimus accusamus voluptate nihil quibusdam explicabo incidunt ad rem quisquam blanditiis esse reprehenderit non autem doloribus delectus, enim odio deserunt repellat accusantium provident aliquam dolore similique minus.</p>
@@ -84,32 +104,41 @@
                 <div class="card__row row d-flex">
                     <div class="card__col col col-6">
                         <div class="card__carousel c-carousel carousel">
-                            <img src="img/card-image.jpg" class="c-carousel__image" alt="">
-                            <img src="img/card-image.jpg" class="c-carousel__image" alt="">
-                            <img src="img/card-image.jpg" class="c-carousel__image" alt="">
-                            <img src="img/card-image.jpg" class="c-carousel__image" alt="">
+                            <img src="img/card__image_big.jpg" class="c-carousel__image" alt="">
+                            <img src="img/card__image_big.jpg" class="c-carousel__image" alt="">
+                            <img src="img/card__image_big.jpg" class="c-carousel__image" alt="">
+                            <img src="img/card__image_big.jpg" class="c-carousel__image" alt="">
                         </div>
-                        <div class="card__dots c-dots d-flex">
-                            <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card-image_min.jpg');">
-                            </button>
-                            <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card-image_min.jpg');">
-                            </button>
-                            <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card-image_min.jpg');">
-                            </button>
-                            <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card-image_min.jpg');">
-                            </button>
+                        <div class="card__dots c-dots">
+                            <div class="c-dots__row row d-flex">
+                                <div class="c-dots__item">
+                                    <button role="button" class="owl-dot c-dots__image active" style="background-image: url('img/card__image_min.jpg');">
+                                    </button>
+                                </div>
+                                <div class="c-dots__item">
+                                    <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card__image_min.jpg');">
+                                    </button>
+                                </div>
+                                <div class="c-dots__item">
+                                    <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card__image_min.jpg');">
+                                    </button>
+                                </div>
+                                <div class="c-dots__item">
+                                    <button role="button" class="owl-dot c-dots__image" style="background-image: url('img/card__image_min.jpg');">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card__col col col-6">
-                    <h3 class="card__title title title_h3">Описание</h3>
-                    <div class="card__description">
-                        <p>
-                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
-                            текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы
-                        </p>
+                    <div class="card__col col col-6">
+                        <h3 class="card__title title title_h3">Описание</h3>
+                        <div class="card__description">
+                            <p>
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                            </p>
+                        </div>
+                        <h3 class="card__title title title_h3">Характеристики</h3>
                     </div>
-                    <h3 class="card__title title title_h3">Характеристики</h3>
                 </div>
             </div>
         </div>

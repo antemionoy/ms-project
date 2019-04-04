@@ -43,6 +43,35 @@ function owlCarouselSlider(owl) {
 
 }
 
+function owlFunction(carousel) {
+
+    $(carousel).owlCarousel({
+        items: 1,
+        loop: false,
+        nav: true,
+        dots: true,
+        dotsContainer: ".c-dots .c-dots__row",
+        responsive: {
+            320: {
+                items: 1,
+            },
+
+            480: {
+                items: 1
+            },
+
+            768: {
+                items: 1
+            },
+
+            1023: {
+                items: 1
+            }
+        }
+    });
+}
+
+
 function zoomPopUp(item) {
     $(item).magnificPopup({
         delegate: 'a',
@@ -69,6 +98,9 @@ function zoomPopUp(item) {
 
 
 $(function() {
+
     owlCarouselSlider($('.s-gallery'));
     zoomPopUp('.s-gallery');
+    owlFunction('.card__carousel');
+
 });
