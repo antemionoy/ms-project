@@ -97,6 +97,41 @@ function zoomPopUp(item) {
 }
 
 
+$('.partners__slider').owlCarousel({
+        loop: false,
+        margin: 20,
+        nav: true,
+        dots: false,
+        slideBy: 1,
+        items: 5,
+        center: false,
+        responsiveClass: true,
+        responsive: {
+
+            320: {
+                items: 1,
+                dots: true
+            },
+
+            480: {
+                items: 1,
+                dots: true
+            },
+
+            768: {
+                items: 3,
+                dots: true
+
+            },
+
+            1023: {
+                items: 5,
+                dots: false
+            }
+        }
+});
+
+
 $(function() {
 
     owlCarouselSlider($('.s-gallery'));

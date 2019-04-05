@@ -18,21 +18,28 @@
                 <a href="#" class="header__logo">
                     <img src="../img/logo.png" alt="Логотип">
                 </a>
-                <div class="header__contacts d-flex">
-                    <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
-                    <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
+                <div class="header__contacts h-contacts d-flex">
+                    <div class="h-contacts__item d-flex">
+                        <div class="h-contacts__circle h-contacts__circle_big"></div>
+                        <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
+                    </div>
+                      <div class="h-contacts__item d-flex">
+                        <div class="h-contacts__circle h-contacts__circle_small"></div>
+                        <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
+                    </div>
                 </div>
                 <div class="header__language language d-flex">
-                    <button class="language__item language__item_active" type="button">Русский</button>
-                    <button class="language__item" type="button">English</button>                
+                    <a href="#" class="language__item language__item_active">Русский</a>
+                    <a href="#" class="language__item">English</a>
                 </div>
-                <div class="header__address address">
-                    <div class="address__icon"></div>
+                <div class="header__address address d-flex">
+                    <div class="address__circle"></div>
                     <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
                 </div>
             </div>
-            <nav class="header__bottom">
-                <ul class="menu d-flex">
+            <nav class="header__bottom d-flex">
+                <div class="header__circle"></div>
+                <ul class="header__menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">О компании</a>
                     </li>
@@ -97,7 +104,7 @@
                     <div class="form__row row d-flex">
                         <div class="form__col col col-9 row d-flex wrap">
                             <div class="form__field form__input col">
-                                <input type="text" placeholder="Ваше Имя" >
+                                <input type="text" placeholder="Ваше Имя">
                             </div>
                             <div class="form__field form__input col">
                                 <input type="text" placeholder="Ваш e-mail">
@@ -247,7 +254,10 @@
         <div class="news__container container">
             <ul class="news__row row d-flex">
                 <li class="news__col col col-6">
-                    <h2 class="news__title title title_h2">Новости</h2>
+                    <div class="news__top d-flex">
+                        <h2 class="news__title news__title_main title title_h2">Новости</h2>
+                        <a href="#" class="news__title news__title_link title title_h3">Все новости</a>
+                    </div>
                     <ul class="news__inset row d-flex">
                         <li class="news__col col col-6">
                             <div class="news__item">
