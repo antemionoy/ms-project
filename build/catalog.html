@@ -13,73 +13,38 @@
 
 <body>
     <header class="header">
-        <div class="header__container container">
+         <div class="header__container container">
             <div class="header__top d-flex">
                 <a href="#" class="header__logo">
                     <img src="../img/logo.png" alt="Логотип">
                 </a>
-                <div class="header__contacts d-flex">
-                    <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
-                    <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
+                <div class="header__contacts h-contacts d-flex">
+                    <div class="h-contacts__item d-flex">
+                        <div class="h-contacts__circle h-contacts__circle_big"></div>
+                        <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
+                    </div>
+                      <div class="h-contacts__item d-flex">
+                        <div class="h-contacts__circle h-contacts__circle_small"></div>
+                        <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
+                    </div>
                 </div>
                 <div class="header__language language d-flex">
                     <a href="#" class="language__item language__item_active">Русский</a>
                     <a href="#" class="language__item">English</a>
                 </div>
-                <div class="header__address address">
+                <div class="header__address address d-flex">
                     <div class="address__circle"></div>
                     <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
                 </div>
             </div>
-            <nav class="header__bottom">
-                <ul class="menu d-flex">
+            <nav class="header__bottom d-flex">
+                <div class="header__circle"></div>
+                <ul class="header__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">О компании</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Продукты</a>
-                        <ul class="menu__dropdown dropdown">
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Оборудование для эксплуатации и ремонта скважин</a>
-                                <ul class="dropdown">
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Гидравлические ключи</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Спайдеры</a>
-                                        <ul class="dropdown">
-                                            <li class="dropdown__item">
-                                                <a href="#" class="dropdown__link">Cпайдер СГА50</a>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <a href="#" class="dropdown__link">Спайдер СГА80</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Превенторы</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Герметизаторы</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Ключи шаровые</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Cистема управления добычи нефти</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Комплектация УЭЦН</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Сервис</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Системы управления добычи нефти</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Сервис</a>
@@ -111,15 +76,18 @@
                     Оборудование для эксплуатации и ремонта скважин
                 </li>
             </ul>
-            <form action="#" class="search"></form>
+            <form action="#" class="search d-flex">
+                <input type="text" class="search__input" placeholder="Поиск">
+                <button class="search__btn" type="button"></button>
+            </form>
         </div>
     </div>
     <section class="catalog">
         <div class="catalog__container container">
             <h1 class="catalog__title title title_h2">Оборудование для эксплуатаци<br> и ремонта скважин</h1>
             <div class="catalog__description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consectetur, hic laboriosam nemo voluptatibus ab iusto eaque, saepe itaque ipsam sapiente perspiciatis. Repellendus ducimus accusamus voluptate nihil quibusdam explicabo incidunt ad rem quisquam blanditiis esse reprehenderit non autem doloribus delectus, enim odio deserunt repellat accusantium provident aliquam dolore similique minus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit recusandae commodi vel sequi nulla reiciendis sint quaerat quasi aliquam!</p>
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                <p>По своей сути рыбатекст является альтернативой традиционному который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от  текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. </p>
             </div>
             <ul class="catalog__goods goods goods__row row wrap d-flex">
                 <li class="goods__col col col-3">
@@ -128,9 +96,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -141,9 +107,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -154,9 +118,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -167,9 +129,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -180,9 +140,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -193,9 +151,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -206,9 +162,7 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -219,9 +173,95 @@
                         <div class="goods__content">
                             <p class="goods__name">Гидроключ КГРА-1200КП</p>
                             <div class="goods__hidden">
-                                <p class="goods__descr">Начинающему оратору
-                                    отточить навык публичных
-                                    выступлений </p>
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods__col col col-3">
+                    <div class="goods__item">
+                        <img src="img/goods__image.jpg" alt="Catalog image" class="goods__image">
+                        <div class="goods__content">
+                            <p class="goods__name">Гидроключ КГРА-1200КП</p>
+                            <div class="goods__hidden">
+                                <p class="goods__descr">Начинающему оратору отточить навык публичных выступлений </p>
                             </div>
                         </div>
                     </div>
@@ -243,8 +283,8 @@
                 <li class="pagination__item">
                     <a href="#" class="pagination__link">9</a>
                 </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__link pagination__item_next">Следующая</a>
+                <li class="pagination__item pagination__item_next">
+                    <a href="#" class="pagination__link">Следующая</a>
                 </li>
             </ul>
         </div>
@@ -271,7 +311,7 @@
             </div>
         </div>
     </section>
-    <div class="promo__bottom promo__form" style="background-image: url(../img/promo-bottom-back_main.png);">
+    <div class="promo__bottom promo__form catalog-form" style="background-image: url(../img/promo-bottom-back_main.png);">
         <div class="container">
             <h2 class="promo__title promo__form-title title title_h2">Задать вопрос</h2>
             <div class="promo__descr promo__form-descr">Заполните форму ниже и наши специалист свяжется с Вами в ближайшее время!</div>
@@ -305,31 +345,41 @@
                     <img src="img/logo_blue.png" alt="Логотип">
                 </a>
                 <ul class="footer__contacts contacts-block">
-                    <li class="contacts-block__item">
-                        <i class="contacts-block__icon"></i>
+                    <li class="contacts-block__item d-flex">
+                        <div class="contacts-block__circle d-flex">
+                            <i class="contacts-block__icon icon icon-copy_gray"></i>
+                        </div>
                         <a href="#" class="contacts-block__link">2005-2018 МС-проект</a>
                     </li>
-                    <li class="contacts-block__item">
-                        <i class="contacts-block__icon"></i>
+                    <li class="contacts-block__item d-flex">
+                        <div class="contacts-block__circle d-flex">
+                            <i class="contacts-block__icon icon icon-phone_gray"></i>
+                        </div>
                         <a href="#" class="contacts-block__link">+7(812) 610-02-26</a>
                     </li>
-                    <li class="contacts-block__item">
-                        <i class="contacts-block__icon"></i>
+                    <li class="contacts-block__item d-flex">
+                        <div class="contacts-block__circle d-flex">
+                            <i class="contacts-block__icon icon icon-mail_gray"></i>
+                        </div>
                         <a href="#" class="contacts-block__link">ms-proekt@ms-proekt.ru</a>
                     </li>
                 </ul>
                 <ul class="footer__social social d-flex">
                     <li class="social__item">
-                        <a href="#" class="social__link"></a>
+                        <a href="#" class="social__link d-flex">
+                            <img src="../img/instagram-logo.png" alt="instagram">
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link"></a>
+                        <a href="#" class="social__link d-flex">
+                            <img src="../img/facebook-logo.png" alt="facebook">
+                        </a>
                     </li>
                 </ul>
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">О нас</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">История</a>
                     </li>
@@ -349,7 +399,7 @@
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">Продукция</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Системы управления добычи нефти</a>
                     </li>
@@ -366,7 +416,7 @@
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">Сервис</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Ремонт гидравлических ключей</a>
                     </li>
@@ -383,7 +433,7 @@
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">Документы</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Система качества</a>
                     </li>
@@ -400,7 +450,7 @@
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">Пресс-центр</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Интересные факты</a>
                     </li>
@@ -414,7 +464,7 @@
             </li>
             <li class="footer__col col">
                 <h3 class="footer__title">Контакты</h3>
-                <ul class="footer__menu menu">
+                <ul class="footer__menu menu d-flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Головной офис</a>
                     </li>
