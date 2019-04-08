@@ -99,38 +99,38 @@ function zoomPopUp(item) {
 
 
 $('.partners__slider').owlCarousel({
-        loop: false,
-        margin: 10,
-        nav: true,
-        dots: false,
-        slideBy: 1,
-        items: 5,
-        center: false,
-        responsiveClass: true,
-        navContainer: ".slider__nav",
-        responsive: {
+    loop: false,
+    margin: 10,
+    nav: true,
+    dots: false,
+    slideBy: 1,
+    items: 5,
+    center: false,
+    responsiveClass: true,
+    navContainer: ".slider__nav",
+    responsive: {
 
-            320: {
-                items: 1,
-                dots: true
-            },
+        320: {
+            items: 1,
+            dots: true
+        },
 
-            480: {
-                items: 1,
-                dots: true
-            },
+        480: {
+            items: 1,
+            dots: true
+        },
 
-            768: {
-                items: 3,
-                dots: true
+        768: {
+            items: 3,
+            dots: true
 
-            },
+        },
 
-            1023: {
-                items: 5,
-                dots: false
-            }
+        1023: {
+            items: 5,
+            dots: false
         }
+    }
 });
 
 
@@ -139,5 +139,22 @@ $(function() {
     owlCarouselSlider($('.s-gallery'));
     zoomPopUp('.s-gallery');
     owlFunction('.card__carousel');
+
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() != 0) {
+            $('.arrow-up').fadeIn();
+        } else {
+            $('.arrow-up').fadeOut();
+        }
+
+    });
+
+    $('.arrow-up').click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+    });
+
 
 });
