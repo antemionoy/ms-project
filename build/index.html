@@ -20,11 +20,15 @@
                 </a>
                 <div class="header__contacts h-contacts d-flex">
                     <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_big"></div>
-                        <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
+                        <div class="h-contacts__circle h-contacts__circle_big d-flex">
+                            <i class="icon icon-phone"></i>
+                        </div>
+                        <a href="tel:+78126100226" class="header__number number"><span class="number__small">+7 (812)</span> 610-02-26</a>
                     </div>
                       <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_small"></div>
+                        <div class="h-contacts__circle h-contacts__circle_small d-flex">
+                            <i class="icon icon-mail"></i>
+                        </div>
                         <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
                     </div>
                 </div>
@@ -33,7 +37,9 @@
                     <a href="#" class="language__item">English</a>
                 </div>
                 <div class="header__address address d-flex">
-                    <div class="address__circle"></div>
+                    <div class="address__circle d-flex">
+                        <i class="icon icon-address"></i>
+                    </div>
                     <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
                 </div>
             </div>
@@ -65,40 +71,45 @@
 <main class="main">
     <section class="promo">
         <div class="promo__top" style="background-image: url(../img/promo-back_main.png);">
-            <div class="promo__container container">
+            <div class="promo__container container d-flex">
+                <i class="promo__icon icon icon-like"></i>
                 <h1 class="promo__title promo__main-title title title_h1">
                     Ценим качество, <br><strong>Cтремимся к лучшему</strong> <br><span class="title__sub">приумножаем наш опыт</span>
                 </h1>
             </div>
         </div>
         <div class="promo__center partners">
-            <div class="promo__container container">
+            <div class="partners__container container">
                 <h2 class="partners__title title title_h2">Наши партнеры</h2>
+                <div class="partners__owlwrap">
                 <div class="partners__slider d-flex">
                     <div class="partners__sl">
-                        <img src="img/parnters__image_one.png" alt="image" class="partners__image">
+                        <img src="img/parnters__image_two.png" alt="image" class="partners__image">
                     </div>
                     <div class="partners__sl">
                         <img src="img/parnters__image_one.png" alt="image" class="partners__image">
                     </div>
                     <div class="partners__sl">
-                        <img src="img/parnters__image_one.png" alt="image" class="partners__image">
+                        <img src="img/parnters__image_two.png" alt="image" class="partners__image">
                     </div>
                     <div class="partners__sl">
                         <img src="img/parnters__image_one.png" alt="image" class="partners__image">
                     </div>
                     <div class="partners__sl">
-                        <img src="img/parnters__image_one.png" alt="image" class="partners__image">
+                        <img src="img/parnters__image_two.png" alt="image" class="partners__image">
                     </div>
                     <div class="partners__sl">
                         <img src="img/parnters__image_one.png" alt="image" class="partners__image">
                     </div>
                 </div>
+                <div class="slider__nav">
+                </div>
+                </div>
             </div>
         </div>
-        <div class="promo__bottom promo__form" style="background-image: url(../img/promo-bottom-back_main.png);">
-            <div class="promo__container container">
-                <h2 class="promo__title promo__form-title title title_h2">Задать вопрос</h2>
+        <div class="promo__bottom promo__form " style="background-image: url(../img/promo-bottom-back_main.png);">
+            <div class="container">
+                <h2 class="promo__title promo__form-title promo__form-title_border title title_h2">Задать вопрос</h2>
                 <div class="promo__descr promo__form-descr">Заполните форму ниже и наши специалист свяжется с Вами в ближайшее время!</div>
                 <form action="#" class="promo__form form">
                     <div class="form__row row d-flex">
@@ -115,7 +126,7 @@
                         </div>
                         <div class="form__col form__col_right col col-3">
                             <button class="form__btn btn">Отправить</button>
-                            <p class="form__text">Все поля обязательные для заполнения</p>
+                            <p class="form__text">Все поля обязательные<br> для заполнения</p>
                         </div>
                     </div>
                 </form>
@@ -182,7 +193,7 @@
                     </div>
                     <h3 class="products__forename">Системы управления добычи нефти</h3>
                 </div>
-                <ul class="products__row row d-flex">
+                <ul class="products__row products__row_border-not row d-flex">
                     <li class="products__col col col-6">
                         <div class="products__head">
                             <img src="img/products__image_one.jpg" alt="Гирдравлический ключ" class="products__image responsive-img">
@@ -250,7 +261,7 @@
                     </div>
                     <h3 class="products__forename">Сырье и материалы для производства<br> кабельной продукции</h3>
                 </div>
-                <ul class="products__row row d-flex">
+                <ul class="products__row products__row_border-not row d-flex">
                     <li class="products__col col col-6">
                         <div class="products__head">
                             <img src="img/products__image_one.jpg" alt="Гирдравлический ключ" class="products__image responsive-img">
@@ -283,7 +294,7 @@
                             <div class="news__item">
                                 <p class="news__date">20.04.2017</p>
                                 <p class="news__text">
-                                    Поставляем из наличия преоб- разователи частоті “TWERD”., дроссели и пульті управления к преобразователям частоты “TWERD”.
+                                    Поставляем из наличия преоб- разователи частоті “TWERD”., дроссели и пульті управления к преобразователям частоты<br> “TWERD”.
                                 </p>
                                 <a href="#" class="news__more">Читать полностью</a>
                             </div>
@@ -292,7 +303,7 @@
                             <div class="news__item">
                                 <p class="news__date">20.04.2017</p>
                                 <p class="news__text">
-                                    Поставляем из наличия преоб- разователи частоті “TWERD”., дроссели и пульті управления к преобразователям частоты “TWERD”.
+                                    Поставляем из наличия преоб- разователи частоті “TWERD”., дроссели и пульті управления к преобразователям частоты<br>  “TWERD”.
                                 </p>
                                 <a href="#" class="news__more">Читать полностью</a>
                             </div>

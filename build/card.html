@@ -12,19 +12,23 @@
 </head>
 
 <body>
-    <header class="header">
-         <div class="header__container container">
+    <header class="header header-page">
+        <div class="header__container container">
             <div class="header__top d-flex">
-                <a href="#" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="../img/logo.png" alt="Логотип">
                 </a>
                 <div class="header__contacts h-contacts d-flex">
                     <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_big"></div>
-                        <a href="tel:+78126100226" class="header__number number">+7 (812) 610-02-26</a>
+                        <div class="h-contacts__circle h-contacts__circle_big d-flex">
+                            <i class="icon icon-phone"></i>
+                        </div>
+                        <a href="tel:+78126100226" class="header__number number"><span class="number__small">+7 (812)</span> 610-02-26</a>
                     </div>
-                      <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_small"></div>
+                    <div class="h-contacts__item d-flex">
+                        <div class="h-contacts__circle h-contacts__circle_small d-flex">
+                            <i class="icon icon-mail"></i>
+                        </div>
                         <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
                     </div>
                 </div>
@@ -33,7 +37,9 @@
                     <a href="#" class="language__item">English</a>
                 </div>
                 <div class="header__address address d-flex">
-                    <div class="address__circle"></div>
+                    <div class="address__circle d-flex">
+                        <i class="icon icon-address"></i>
+                    </div>
                     <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
                 </div>
             </div>
@@ -43,8 +49,50 @@
                     <li class="menu__item">
                         <a href="#" class="menu__link">О компании</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item menu__item_drop">
                         <a href="#" class="menu__link">Продукты</a>
+                        <ul class="menu__dropdown dropdown">
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Оборудование для эксплуатации и ремонта скважин</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Гидравлические ключи</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Спайдеры</a>
+                                        <ul class="dropdown">
+                                            <li class="dropdown__item dropdown__item_arrow-not">
+                                                <a href="#" class="dropdown__link">Cпайдер СГА50</a>
+                                            </li>
+                                            <li class="dropdown__item dropdown__item_arrow-not">
+                                                <a href="#" class="dropdown__link">Спайдер СГА80</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Превенторы</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Герметизаторы</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Ключи шаровые</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Cистема управления добычи нефти</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Комплектация УЭЦН</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Сервис</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Системы управления добычи нефти</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Сервис</a>
@@ -86,6 +134,9 @@
         <div class="catalog__container container">
             <ul class="catalog__tags tags d-flex">
                 <li class="tags__item">
+                    <a href="#" class="tags__link">Документация</a>
+                </li>
+                <li class="tags__item">
                     <a href="#" class="tags__link tags__link_active">Запасные Части</a>
                 </li>
                 <li class="tags__item">
@@ -94,17 +145,14 @@
                 <li class="tags__item">
                     <a href="#" class="tags__link">Опросный лист</a>
                 </li>
-                <li class="tags__item">
-                    <a href="#" class="tags__link">Документы</a>
-                </li>
-                <li class="tags__item">
+                <!--      <li class="tags__item">
                     <a href="#" class="tags__link">Запрос</a>
-                </li>
+                </li> -->
             </ul>
-            <h1 class="catalog__title title title_h2">Оборудование для эксплуатаци<br> и ремонта скважин</h1>
+            <h1 class="catalog__title title title_h2">Название текстового блока</h1>
             <div class="catalog__description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consectetur, hic laboriosam nemo voluptatibus ab iusto eaque, saepe itaque ipsam sapiente perspiciatis. Repellendus ducimus accusamus voluptate nihil quibusdam explicabo incidunt ad rem quisquam blanditiis esse reprehenderit non autem doloribus delectus, enim odio deserunt repellat accusantium provident aliquam dolore similique minus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit recusandae commodi vel sequi nulla reiciendis sint quaerat quasi aliquam!</p>
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба</p>
             </div>
             <div class="catalog__card card">
                 <h2 class="card__name title title_h2">Название товара</h2>
@@ -141,12 +189,16 @@
                         <h3 class="card__title title title_h3">Описание</h3>
                         <div class="card__description">
                             <p>
-                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. текста рыбы на русском языке, а начинающему
                             </p>
                         </div>
                         <h3 class="card__title title title_h3">Характеристики</h3>
                         <div class="card__spec spec">
                             <div class="spec__header wrap d-flex">
+                                <div class="spec__name">Название свойства</div>
+                                <div class="spec__name">Свойство</div>
+                            </div>
+                            <div class="spec__line wrap d-flex">
                                 <div class="spec__name">Название свойства</div>
                                 <div class="spec__name">Свойство</div>
                             </div>
@@ -184,26 +236,29 @@
     <section class="gallery">
         <div class="gallery__container container">
             <h2 class="gallery__title title title_h2">Фотогалерея</h2>
-            <div class="gallery__slider s-gallery d-flex">
-                <a href="img/goods__image.jpg" class="s-gallery__slide">
-                    <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
-                </a>
-                <a href="img/goods__image.jpg" class="s-gallery__slide">
-                    <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
-                </a>
-                <a href="img/goods__image.jpg" class="s-gallery__slide">
-                    <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
-                </a>
-                <a href="img/goods__image.jpg" class="s-gallery__slide">
-                    <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
-                </a>
-                <a href="img/goods__image.jpg" class="s-gallery__slide">
-                    <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
-                </a>
+            <div class="gallery__owlwrap">
+                <div class="gallery__slider s-gallery d-flex">
+                    <a href="img/goods__image.jpg" class="s-gallery__slide">
+                        <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
+                    </a>
+                    <a href="img/goods__image.jpg" class="s-gallery__slide">
+                        <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
+                    </a>
+                    <a href="img/goods__image.jpg" class="s-gallery__slide">
+                        <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
+                    </a>
+                    <a href="img/goods__image.jpg" class="s-gallery__slide">
+                        <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
+                    </a>
+                    <a href="img/goods__image.jpg" class="s-gallery__slide">
+                        <img src="img/goods__image.jpg" alt="Gallery Image" class="s-gallery__image">
+                    </a>
+                </div>
+                <div class="slider__nav"></div>
             </div>
         </div>
     </section>
-    <div class="promo__bottom promo__form" style="background-image: url(../img/promo-bottom-back_main.png);">
+    <div class="promo__bottom promo__form card-form" style="background-image: url(../img/promo-bottom-back_main.png);">
         <div class="container">
             <h2 class="promo__title promo__form-title title title_h2">Задать вопрос</h2>
             <div class="promo__descr promo__form-descr">Заполните форму ниже и наши специалист свяжется с Вами в ближайшее время!</div>

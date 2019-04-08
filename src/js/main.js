@@ -16,6 +16,7 @@ function owlCarouselSlider(owl) {
         items: 4,
         center: false,
         responsiveClass: true,
+        navContainer: ".slider__nav",
         responsive: {
 
             320: {
@@ -99,13 +100,14 @@ function zoomPopUp(item) {
 
 $('.partners__slider').owlCarousel({
         loop: false,
-        margin: 20,
+        margin: 10,
         nav: true,
         dots: false,
         slideBy: 1,
         items: 5,
         center: false,
         responsiveClass: true,
+        navContainer: ".slider__nav",
         responsive: {
 
             320: {
