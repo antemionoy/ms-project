@@ -30,7 +30,7 @@ function owlCarouselSlider(owl) {
             },
 
             768: {
-                items: 3,
+                items: 2,
                 dots: true
 
             },
@@ -127,7 +127,46 @@ $('.partners__slider').owlCarousel({
         },
 
         1023: {
+            items: 4,
+            dots: false
+        },
+
+        1320: {
             items: 5,
+            dots: false
+        }
+    }
+});
+
+$('.promo__slider').owlCarousel({
+    loop: false,
+    margin: 0,
+    nav: true,
+    dots: false,
+    slideBy: 1,
+    items: 1,
+    center: false,
+    responsiveClass: true,
+    responsive: {
+
+        320: {
+            items: 1,
+            dots: true
+        },
+
+        480: {
+            items: 1,
+            dots: true
+        },
+
+        768: {
+            items: 1,
+            dots: true
+
+        },
+
+        1023: {
+            items: 1,
             dots: false
         }
     }
