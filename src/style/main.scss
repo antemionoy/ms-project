@@ -8,6 +8,8 @@
 
 @import "partials/vars";
 @import "partials/mixin";
+@import "partials/fotnAwesome.scss";
+
 
 * {
     box-sizing: border-box;
@@ -2059,6 +2061,117 @@ h3 {
 .form__btn:hover {
     background-color: $color-blue;
     color: #fff;
+}
+
+
+
+// check
+
+.terms-conditions{
+    position: relative;
+    margin-top: 30px;
+}
+
+.checkbox-template, .radio-template {
+    transform: translateY(3px);
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.checkbox-template::before, .radio-template::before {
+    margin-right: 10px;
+    content: '';
+    display: inline-block;
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: #dae2e7;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.checkbox-template::after, .radio-template::after {
+    content: '\f00c';
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    display: block;
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 0.7em;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #fff;
+}
+
+.form .terms-conditions label {
+    cursor: pointer;
+    color: #aaa;
+    font-size: 0.9em;
+    vertical-align: -2px;
+}
+
+.checkbox-template + label, .radio-template + label {
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.checkbox-template:checked::before, .radio-template:checked::before {
+    background: #2b90d9;
+}
+
+.checkbox-template:checked::after, .radio-template:checked::after {
+    opacity: 1;
+}
+
+
+// hamb
+
+.hamburger__line {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger.is-active {
+    transition: all .25s cubic-bezier(.25, .46, .45, .94);
+    transition-delay: 0.3s;
+    transform: rotate(45deg);
+}
+
+.hamburger.is-active .hamburger__line:nth-child(2) {
+    width: 0px;
+}
+
+.hamburger.is-active .hamburger__line:nth-child(1),
+.hamburger.is-active .hamburger__line:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.hamburger.is-active .hamburger__line:nth-child(1) {
+    transform: translateY(7px);
+}
+
+.hamburger.is-active .hamburger__line:nth-child(3) {
+    transform: translateY(-3px) rotate(90deg);
 }
 
 

@@ -173,11 +173,24 @@ $('.promo__slider').owlCarousel({
 });
 
 
+function toggleMenu() {
+    var hamb = $('.hamburger');
+
+    hamb.on('click', function() {
+        $(this).toggleClass('is-active');
+        $('html').toggleClass('overflow');
+        $('.wrapper').toggleClass('open-sidebar');
+        $('.header__nav').toggleClass('active');
+    });
+}
+
+
 $(function() {
 
     owlCarouselSlider($('.s-gallery'));
     zoomPopUp('.s-gallery');
     owlFunction('.card__carousel');
+    toggleMenu();
 
 
     $(window).scroll(function() {
