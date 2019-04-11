@@ -1958,7 +1958,7 @@ h3 {
 }
 
 .promo__center {
-    min-height: 800px;
+    min-height: 830px;
     position: relative;
     z-index: 100;
     background-image: url(../img/back-partners_new.png);
@@ -1967,7 +1967,7 @@ h3 {
     background-size: 100%;
 }
 
-.promo__container{
+.promo__container {
     margin-top: 0;
     position: absolute;
     width: 100%;
@@ -2002,11 +2002,11 @@ h3 {
     color: $color-darkblue;
 }
 
-.menu__item_drop:hover>.menu__dropdown {
+.menu__item_drop:hover> .menu__category .menu__dropdown{
     display: block;
 }
 
-.dropdown__item:hover>.dropdown {
+.dropdown__item:hover> .menu__category > .dropdown {
     display: block;
 }
 
@@ -2067,12 +2067,14 @@ h3 {
 
 // check
 
-.terms-conditions{
+.terms-conditions {
     position: relative;
     margin-top: 30px;
+    padding: 0px 15px;
 }
 
-.checkbox-template, .radio-template {
+.checkbox-template,
+.radio-template {
     transform: translateY(3px);
     user-select: none;
     cursor: pointer;
@@ -2082,7 +2084,8 @@ h3 {
     height: auto;
 }
 
-.checkbox-template::before, .radio-template::before {
+.checkbox-template::before,
+.radio-template::before {
     margin-right: 10px;
     content: '';
     display: inline-block;
@@ -2097,8 +2100,9 @@ h3 {
     transition: all 0.2s;
 }
 
-.checkbox-template::after, .radio-template::after {
-    content: '\f00c';
+.checkbox-template::after,
+.radio-template::after {
+    content: '✓';
     width: 12px;
     height: 12px;
     line-height: 12px;
@@ -2122,21 +2126,28 @@ h3 {
     vertical-align: -2px;
 }
 
-.checkbox-template + label, .radio-template + label {
+.checkbox-template+label,
+.radio-template+label {
     margin-left: 10px;
     margin-top: 4px;
 }
 
-.checkbox-template:checked::before, .radio-template:checked::before {
+.checkbox-template:checked::before,
+.radio-template:checked::before {
     background: #2b90d9;
 }
 
-.checkbox-template:checked::after, .radio-template:checked::after {
+.checkbox-template:checked::after,
+.radio-template:checked::after {
     opacity: 1;
 }
 
 
 // hamb
+
+.hamburger {
+    display: none;
+}
 
 .hamburger__line {
     width: 35px;
@@ -2167,12 +2178,70 @@ h3 {
 }
 
 .hamburger.is-active .hamburger__line:nth-child(1) {
-    transform: translateY(7px);
+    transform: translateY(2px);
 }
 
 .hamburger.is-active .hamburger__line:nth-child(3) {
-    transform: translateY(-3px) rotate(90deg);
+    transform: translateY(-14px) rotate(90deg);
 }
 
+html.overflow,
+html.overflow body {
+    overflow: hidden !important;
+}
+
+
+.menu__category {
+    display: block;
+}
+
+
+.dots__container{
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 35%;
+    z-index: 888;
+}
+
+.promo__dots{
+    width: 100px;
+    transform: rotate(90deg);
+}
+
+.promo__dots button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 4px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.promo__dots button.active {
+    border: 1px solid #fff;
+}
+
+
+.promo__dots button span{
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.h-contacts__circle_mobile{
+    display: none;
+}
+
+.header__bottom .language{
+    display: none;
+}
 
 @import "partials/media";

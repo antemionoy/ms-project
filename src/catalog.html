@@ -24,7 +24,7 @@
             <h1 class="catalog__title title title_h2">Оборудование для эксплуатаци<br> и ремонта скважин</h1>
             <div class="catalog__description">
                 <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
-                <p>По своей сути рыбатекст является альтернативой традиционному который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от  текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. </p>
+                <p>По своей сути рыбатекст является альтернативой традиционному который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. </p>
             </div>
             <ul class="catalog__goods goods goods__row row wrap d-flex">
                 <li class="goods__col col col-3">
@@ -259,13 +259,17 @@
                 <div class="form__row row d-flex">
                     <div class="form__col col col-9 row d-flex wrap">
                         <div class="form__field form__input col">
-                            <input type="text" placeholder="Ваше Имя">
+                            <input type="text" placeholder="Ваше Имя" required>
                         </div>
                         <div class="form__field form__input col">
-                            <input type="text" placeholder="Ваш e-mail">
+                            <input type="text" placeholder="Ваш e-mail" required>
                         </div>
                         <div class="form__field form__textarea col">
-                            <textarea placeholder="Ваше сообщение"></textarea>
+                            <textarea placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <div class="form-group terms-conditions">
+                            <input id="license" type="checkbox" class="checkbox-template">
+                            <label for="license">Я согласен с политикой конфиденциальности</label>
                         </div>
                     </div>
                     <div class="form__col form__col_right col col-3">

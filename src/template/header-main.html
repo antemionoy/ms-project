@@ -16,107 +16,112 @@
 </head>
 
 <body>
-    <header class="header header-main">
-        <div class="header__container container">
-            <div class="header__top d-flex">
-                <a href="#" class="header__logo">
-                    <img src="../img/logo.png" alt="Логотип">
-                </a>
-                <div class="header__contacts h-contacts d-flex">
-                    <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_big d-flex">
-                            <i class="icon icon-phone"></i>
+    <div class="wrapper">
+        <header class="header header-main">
+            <div class="header__container container">
+                <div class="header__top d-flex">
+                    <a href="#" class="header__logo">
+                        <img src="../img/logo.png" alt="Логотип">
+                    </a>
+                    <div class="header__contacts h-contacts d-flex">
+                        <div class="h-contacts__item d-flex">
+                            <div class="h-contacts__circle h-contacts__circle_big d-flex">
+                                <i class="icon icon-phone"></i>
+                            </div>
+                            <a href="tel:+78126100226" class="header__number number"><span class="number__small">+7 (812)</span> 610-02-26</a>
                         </div>
-                        <a href="tel:+78126100226" class="header__number number"><span class="number__small">+7 (812)</span> 610-02-26</a>
-                    </div>
-                    <div class="h-contacts__item d-flex">
-                        <div class="h-contacts__circle h-contacts__circle_small d-flex">
-                            <i class="icon icon-mail"></i>
+                        <div class="h-contacts__item d-flex">
+                            <div class="h-contacts__circle h-contacts__circle_small d-flex">
+                                <i class="icon icon-mail"></i>
+                            </div>
+                            <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
                         </div>
-                        <a href="mailto:ms-proekt@ms-proekt.ru" class="header__mail mail">ms-proekt@ms-proekt.ru</a>
+                    </div>
+                    <div class="header__language language d-flex">
+                        <a href="#" class="language__item language__item_active">Русский</a>
+                        <a href="#" class="language__item">English</a>
+                    </div>
+                    <div class="header__address address d-flex">
+                        <div class="address__circle d-flex">
+                            <i class="icon icon-address"></i>
+                        </div>
+                        <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
                     </div>
                 </div>
-                <div class="header__language language d-flex">
-                    <a href="#" class="language__item language__item_active">Русский</a>
-                    <a href="#" class="language__item">English</a>
-                </div>
-                <div class="header__address address d-flex">
-                    <div class="address__circle d-flex">
-                        <i class="icon icon-address"></i>
-                    </div>
-                    <p class="address__text">Санкт-Петербург, ул. Професора Попова, д. 23, лит. М </p>
-                </div>
-            <div class="header__hamburger hamburger">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-            </div>
-            </div>
-            <nav class="header__bottom d-flex">
-                <div class="header__circle"></div>
-                <ul class="header__menu menu d-flex">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">О компании</a>
-                    </li>
-                    <li class="menu__item menu__item_drop">
-                        <a href="#" class="menu__link">Продукция</a>
-                        <ul class="menu__dropdown dropdown">
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Оборудование для эксплуатации и ремонта скважин</a>
-                                <ul class="dropdown">
+                <nav class="header__bottom d-flex">
+                    <div class="header__circle"></div>
+                    <ul class="header__menu menu d-flex" id="main-nav">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item menu__item_drop">
+                            <a href="#" class="menu__link menu__link_dropdown">Продукция</a>
+                            <div class="menu__category">
+                                <ul class="menu__dropdown dropdown">
                                     <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Гидравлические ключи</a>
+                                        <a href="#" class="dropdown__link">Оборудование для эксплуатации и ремонта скважин</a>
+                                        <div class="menu__category">
+                                            <ul class="dropdown menu-drop">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link">Гидравлические ключи</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link">Спайдеры</a>
+                                                    <div class="menu__category">
+                                                        <ul class="dropdown  menu-drop">
+                                                            <li class="dropdown__item dropdown__item_arrow-not">
+                                                                <a href="#" class="dropdown__link dropdown__link_end">Cпайдер СГА50</a>
+                                                            </li>
+                                                            <li class="dropdown__item dropdown__item_arrow-not">
+                                                                <a href="#" class="dropdown__link dropdown__link_end">Спайдер СГА80</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link">Превенторы</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link">Герметизаторы</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link">Ключи шаровые</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Спайдеры</a>
-                                        <ul class="dropdown">
-                                            <li class="dropdown__item dropdown__item_arrow-not">
-                                                <a href="#" class="dropdown__link">Cпайдер СГА50</a>
-                                            </li>
-                                            <li class="dropdown__item dropdown__item_arrow-not">
-                                                <a href="#" class="dropdown__link">Спайдер СГА80</a>
-                                            </li>
-                                        </ul>
+                                        <a href="#" class="dropdown__link menu__link_not-dropdown">Cистема управления добычи нефти</a>
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Превенторы</a>
+                                        <a href="#" class="dropdown__link menu__link_not-dropdown">Комплектация УЭЦН</a>
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Герметизаторы</a>
+                                        <a href="#" class="dropdown__link menu__link_not-dropdown">Сервис</a>
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Ключи шаровые</a>
+                                        <a href="#" class="dropdown__link menu__link_not-dropdown">Системы управления добычи нефти</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Cистема управления добычи нефти</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Комплектация УЭЦН</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Сервис</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="dropdown__link">Системы управления добычи нефти</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Сервис</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Документы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Пресс-центр</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
+                            </div>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сервис</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Документы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Пресс-центр</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
